@@ -1,0 +1,57 @@
+{
+  "data_id": "d3cf52f1745546049913adb62089aed2",
+  "extracted_files": {
+    "files_in_archive": [
+      {
+        "data_id": "36fde8d7f0144806ad9d905ab45bec9e",
+        "detected_by": 0,
+        "display_name": "checkstyle-7.0-src.zip/checkstyle-7.0/.idea/inspectionProfiles/profiles_settings.xml",
+        "file_size": 212,
+        "file_type": "text/plain",
+        "file_type_description": "ASCII text",
+        "progress_percentage": 100,
+        "scan_all_result_i": 0,
+        "scanned_with": 7
+      },
+      {
+        "data_id": "774ff2b593e644e9929701435e199686",
+        "detected_by": 0,
+        "display_name": "checkstyle-7.0-src.zip/checkstyle-7.0/.idea/libraries/Maven__com_google_guava_guava_19_0.xml",
+        "file_size": 487,
+        "file_type": "text/plain",
+        "file_type_description": "ASCII text",
+        "progress_percentage": 100,
+        "scan_all_result_i": 0,
+        "scanned_with": 7
+      }
+    ]
+  },
+  "file_info": {
+    "display_name": "checkstyle-7.0-src.zip",
+    "file_size": 4683304,
+    "file_type": "application/zip",
+    "file_type_description": "Zip archive data, at least v1.0 to extract",
+    "md5": "7435975ec13feba74bf2a945227e4167",
+    "sha1": "635d3d6fd5db777f5b6c9077159b200c23c93d9a",
+    "sha256": "b082e1a02cd82fb1b692cd2465487cb15454e43a032faf99d1060a013652e3ff",
+    "upload_timestamp": "2016-07-15T09:12:20.076Z"
+  },
+  "process_info": {
+    "blocked_reason": "",
+    "file_type_skipped_scan": false,
+    "profile": "File Scan",
+    "progress_percentage": 95,
+    "result": "Processing",
+    "user_agent": "webscan"
+  },
+  "scan_results": {
+    "data_id": "d3cf52f1745546049913adb62089aed2",
+    "progress_percentage": 95,
+    "scan_all_result_a": "Clean",
+    "scan_all_result_i": 0,
+    "scan_details": {},
+    "start_time": "2016-07-15T09:12:20.076Z",
+    "total_avs": 0,
+    "total_time": -1
+  }
+}

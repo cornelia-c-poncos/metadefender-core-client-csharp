@@ -1,0 +1,74 @@
+{
+  "data_id": "e981b537cff14c3fbbba923d7a71ff2e",
+  "file_info": {
+    "display_name": ".bashrc",
+    "file_size": 3843,
+    "file_type": "text/plain",
+    "file_type_description": "ASCII text",
+    "md5": "814ddc15def30f264f9ae039bb654584",
+    "sha1": "4cbd3612cbfeafaccd588324cd8d1aeb6b463b45",
+    "sha256": "976f0f21d904d535a6a316fe1c8f09f4d65b4b41f91e32e3293fe107aa7d91e9",
+    "upload_timestamp": "2016-06-30T14:57:21.911Z"
+  },
+  "process_info": {
+    "blocked_reason": "",
+    "file_type_skipped_scan": false,
+    "profile": "File Scan",
+    "progress_percentage": 100,
+    "result": "Allowed",
+    "user_agent": "Java client"
+  },
+  "scan_results": {
+    "data_id": "e981b537cff14c3fbbba923d7a71ff2e",
+    "progress_percentage": 100,
+    "scan_all_result_a": "Clean",
+    "scan_all_result_i": 0,
+    "scan_details": {
+      "Agnitum": {
+        "def_time": "2016-06-30T10:40:42.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 173,
+        "threat_found": ""
+      },
+      "Bitdefender": {
+        "def_time": "2016-06-30T12:31:51.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 217,
+        "threat_found": ""
+      },
+      "Cyren": {
+        "def_time": "2016-06-30T12:53:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 208,
+        "threat_found": ""
+      },
+      "ESET": {
+        "def_time": "2016-06-30T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 190,
+        "threat_found": ""
+      },
+      "K7": {
+        "def_time": "2016-06-30T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 135,
+        "threat_found": ""
+      },
+      "ThreatTrack": {
+        "def_time": "2016-06-30T07:20:57.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 470,
+        "threat_found": ""
+      }
+    },
+    "start_time": "2016-06-30T14:57:21.937Z",
+    "total_avs": 6,
+    "total_time": 992
+  }
+}

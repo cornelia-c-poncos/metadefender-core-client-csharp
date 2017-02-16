@@ -1,0 +1,114 @@
+{
+  "data_id": "fafb3a12b0d141909b3a3ba6b26e42c9",
+  "extracted_files": {
+    "files_in_archive": [
+      {
+        "data_id": "3686cbf2b94048a88db73dbcc1ff9bd3",
+        "detected_by": 0,
+        "display_name": "testZip.zip/.bashrc",
+        "file_size": 3843,
+        "file_type": "text/plain",
+        "file_type_description": "ASCII text",
+        "progress_percentage": 100,
+        "scan_all_result_i": 0,
+        "scanned_with": 8
+      },
+      {
+        "data_id": "ec6a62d57a804ed386aeec987995e72a",
+        "detected_by": 0,
+        "display_name": "testZip.zip/work/testRun.sh",
+        "file_size": 92,
+        "file_type": "text/x-shellscript",
+        "file_type_description": "Bourne-Again shell script, ASCII text executable",
+        "progress_percentage": 100,
+        "scan_all_result_i": 0,
+        "scanned_with": 8
+      }
+    ]
+  },
+  "file_info": {
+    "display_name": "testZip.zip",
+    "file_size": 2190,
+    "file_type": "application/zip",
+    "file_type_description": "Zip archive data, at least v2.0 to extract",
+    "md5": "c1fcfb63dae07ece23dc4c9401dbbf13",
+    "sha1": "cd292f2189e6061d36571f8af372e119b9cbc06d",
+    "sha256": "7b1251d9284b585a687805af17b6d4aadd4c3978f7d850d19026608d567e2b21",
+    "upload_timestamp": "2016-07-05T11:07:09.897Z"
+  },
+  "process_info": {
+    "blocked_reason": "",
+    "file_type_skipped_scan": false,
+    "profile": "File Scan",
+    "progress_percentage": 100,
+    "result": "Allowed",
+    "user_agent": ""
+  },
+  "scan_results": {
+    "data_id": "fafb3a12b0d141909b3a3ba6b26e42c9",
+    "progress_percentage": 100,
+    "scan_all_result_a": "Clean",
+    "scan_all_result_i": 0,
+    "scan_details": {
+      "Agnitum": {
+        "def_time": "2016-07-04T12:03:51.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 26,
+        "threat_found": ""
+      },
+      "Avira": {
+        "def_time": "2016-07-01T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 1,
+        "threat_found": ""
+      },
+      "Bitdefender": {
+        "def_time": "2016-07-05T08:16:37.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 0,
+        "threat_found": ""
+      },
+      "Cyren": {
+        "def_time": "2016-07-05T08:13:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 0,
+        "threat_found": ""
+      },
+      "ESET": {
+        "def_time": "2016-07-05T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 0,
+        "threat_found": ""
+      },
+      "K7": {
+        "def_time": "2016-07-05T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 0,
+        "threat_found": ""
+      },
+      "ThreatTrack": {
+        "def_time": "2016-07-05T03:10:06.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 0,
+        "threat_found": ""
+      },
+      "TotalDefense": {
+        "def_time": "2016-07-01T00:00:00.000Z",
+        "location": "local",
+        "scan_result_i": 0,
+        "scan_time": 39,
+        "threat_found": ""
+      }
+    },
+    "start_time": "2016-07-05T11:07:09.976Z",
+    "total_avs": 8,
+    "total_time": 3327
+  }
+}

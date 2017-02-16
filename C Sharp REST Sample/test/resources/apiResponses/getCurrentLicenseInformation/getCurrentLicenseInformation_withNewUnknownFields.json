@@ -1,0 +1,12 @@
+{
+  "days_left": 3740,
+  "deployment": "MSCLNasYszqJECRG3BScVHpJzm2DP9z7M0hJ",
+  "expiration": "09/30/2026",
+  "licensed_engines": "*",
+  "licensed_to": "OPSWAT, Inc.",
+  "max_agent_count": "10",
+  "online_activated": true,
+  "product_id": "MSCL-ALL-1YR-UNLIMITED",
+  "product_name": "Metascan All Linux - 1 year - Unlimited scans per day",
+  "new_field_in_the_api_response": "Some value"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "max_file_size": 200000000,
+    "name": "File Scan"
+  },
+  {
+    "max_file_size": 200000000,
+    "name": "File Scan w/o archive"
+  },
+  {
+    "max_file_size": 200000000,
+    "name": "scan w archive enabled"
+  },
+  {
+    "max_file_size": 200000000,
+    "name": "asdasdasdas"
+  },
+  {
+    "max_file_size": 216000000,
+    "name": "DevTest rule"
+  },
+  {
+    "max_file_size": 200000000,
+    "name": "wer"
+  }
+]
