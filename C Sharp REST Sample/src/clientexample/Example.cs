@@ -96,7 +96,7 @@ namespace Opswat.Metadefender.Core.ClientExample
 			try
 			{
 				FileScanResult result = metadefenderCoreClient.FetchScanResultByHash(hash);
-				Console.WriteLine("Fetch result by file hash: " + result.scan_results.scan_all_result_a);
+				Console.WriteLine("Fetch result by file hash: " + result.process_info.result);
 			}
 			catch (MetadefenderClientException e)
 			{

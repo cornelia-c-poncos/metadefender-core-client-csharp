@@ -11,6 +11,7 @@ namespace Opswat.Metadefender.Core.Client.Responses
 		[JsonProperty(Required = Required.Always)]
 		public FileInfo file_info;
 
+		[JsonProperty(Required = Required.Always)]
 		public ProcessInfo process_info;
 
 		[JsonProperty(Required = Required.Always)]
