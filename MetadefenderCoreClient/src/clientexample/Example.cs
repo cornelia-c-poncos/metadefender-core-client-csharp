@@ -187,7 +187,7 @@ namespace Opswat.Metadefender.Core.ClientExample
 							  "\t  -u   username                Required if action is 'info'\n" +
 							  "\t  -p   password                Required if action is 'info'\n" +
 							  "\t  -a   action to do            Required (scan|scan_sync|info|hash)\n" +
-							  "\t  -f   path to file to scan    Required if action is (scan|scan_sync)" +
+							  "\t  -f   path to file to scan    Required if action is (scan|scan_sync)\n" +
 							  "\t  -m   hash (md5|sha1|sha256)  Required if action is (hash)" +
 							  "\n\n\n");
 		}
