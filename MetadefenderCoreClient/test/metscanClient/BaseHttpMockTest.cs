@@ -53,7 +53,7 @@ namespace MetscanClient
 
 		protected void CreateStubForVersion()
 		{
-			CreateStub("/version", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.version.getVersion_success.json"));
+			CreateStub("/version", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.version.getVersion_success.json"));
 		}
 
 		protected void CreateStub(string uri, string method, int status, string json)

@@ -19,9 +19,9 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.scanFile.scanFile_success.json"));
+			CreateStub("/file", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.scanFile.scanFile_success.json"));
 
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				string dataId = metadefenderCoreClient.ScanFile(stream, null);
 				Assert.AreEqual("61dffeaa728844adbf49eb090e4ece0e", dataId);
@@ -40,9 +40,9 @@ namespace MetscanClient
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 			metadefenderCoreClient.SetUserAgent("MyAgent");
 
-			CreateStub("/file", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.scanFile.scanFile_success.json"));
+			CreateStub("/file", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.scanFile.scanFile_success.json"));
 
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				string dataId = metadefenderCoreClient.ScanFile(stream, null);
 				Assert.AreEqual("61dffeaa728844adbf49eb090e4ece0e", dataId);
@@ -64,10 +64,10 @@ namespace MetscanClient
 
 			string existingDataId = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/file", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.scanFile.scanFile_success.json"));
-			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResult.fetchScanResult_success.json"));
+			CreateStub("/file", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.scanFile.scanFile_success.json"));
+			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResult.fetchScanResult_success.json"));
 
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				FileScanResult result = metadefenderCoreClient.ScanFileSync(
 					stream, new FileScanOptions().SetFileName("fileName.txt"), 50, 4000);
@@ -95,11 +95,11 @@ namespace MetscanClient
 
 			string existingDataId = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/file", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.scanFile.scanFile_success.json"));
-			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResult.fetchScanResult_inProgress.json"));
+			CreateStub("/file", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.scanFile.scanFile_success.json"));
+			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResult.fetchScanResult_inProgress.json"));
 
 			bool isException = false;
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				try
 				{
@@ -130,9 +130,9 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.scanFile.scanFile_success.json"));
+			CreateStub("/file", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.scanFile.scanFile_success.json"));
 
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				string dataId = metadefenderCoreClient.ScanFile(
 					stream,
@@ -158,10 +158,10 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file", "POST", 500, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/file", "POST", 500, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
-			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("C_Sharp_REST_Sample.test.resources.testScanFile.txt"))
+			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				try
 				{

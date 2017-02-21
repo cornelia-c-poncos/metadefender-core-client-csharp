@@ -7,8 +7,8 @@
     <ProjectGuid>{7D742A6C-A410-4A43-803C-88F041DDEBDE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>C_Sharp_REST_Sample</RootNamespace>
-    <AssemblyName>C Sharp REST Sample</AssemblyName>
+    <RootNamespace>MetadefenderCoreClient</RootNamespace>
+    <AssemblyName>MetadefenderCoreClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

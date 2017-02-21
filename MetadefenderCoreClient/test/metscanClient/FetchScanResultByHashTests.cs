@@ -16,7 +16,7 @@ namespace MetscanClient
 
 			string existingHash = "e981b537cff14c3fbbba923d7a71ff2e";
 
-			CreateStub("/hash/" + existingHash, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResultByHash.fetchScanResultByHash_success.json"));
+			CreateStub("/hash/" + existingHash, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResultByHash.fetchScanResultByHash_success.json"));
 
 			FileScanResult result = metadefenderCoreClient.FetchScanResultByHash(existingHash);
 			Assert.AreEqual(existingHash, result.data_id);
@@ -36,7 +36,7 @@ namespace MetscanClient
 
 			string nonExistingHash = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/hash/" + nonExistingHash, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResultByHash.fetchScanResult_notFound.json"));
+			CreateStub("/hash/" + nonExistingHash, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResultByHash.fetchScanResult_notFound.json"));
 
 
 			bool isException = false;
@@ -64,7 +64,7 @@ namespace MetscanClient
 
 			string existingDataId = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/hash/" + existingDataId, "GET", 500, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/hash/" + existingDataId, "GET", 500, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
 			try

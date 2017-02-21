@@ -15,7 +15,7 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file/rules", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getAvailableScanRules.getAvailableScanRules_success.json"));
+			CreateStub("/file/rules", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getAvailableScanRules.getAvailableScanRules_success.json"));
 
 			List<ScanRule> result = metadefenderCoreClient.GetAvailableScanRules();
 
@@ -33,7 +33,7 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file/rules", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getAvailableScanRules.getAvailableScanRules_withNewUnknownFieldsJson.json"));
+			CreateStub("/file/rules", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getAvailableScanRules.getAvailableScanRules_withNewUnknownFieldsJson.json"));
 
 			List<ScanRule> result = metadefenderCoreClient.GetAvailableScanRules();
 
@@ -51,7 +51,7 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/file/rules", "GET", 500, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/file/rules", "GET", 500, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
 			try

@@ -17,7 +17,7 @@ namespace MetscanClient
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl(), "admin", "admin");
 
-			CreateStub("/admin/license", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_success.json"));
+			CreateStub("/admin/license", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_success.json"));
 
 			License result = metadefenderCoreClient.GetCurrentLicenseInformation();
 			Assert.AreEqual(3740, result.days_left);
@@ -38,7 +38,7 @@ namespace MetscanClient
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl(), "admin", "admin");
 
-			CreateStub("/admin/license", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_withNewUnknownFields.json"));
+			CreateStub("/admin/license", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_withNewUnknownFields.json"));
 
 			License result = metadefenderCoreClient.GetCurrentLicenseInformation();
 			Assert.AreEqual(3740, result.days_left);
@@ -59,7 +59,7 @@ namespace MetscanClient
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl(), "admin", "admin");
 
-			CreateStub("/admin/license", "GET", 500, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/admin/license", "GET", 500, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
 			try
@@ -83,7 +83,6 @@ namespace MetscanClient
 		public void ApiRedirectTest()
 		{
 			CreateStubForLogin();
-			CreateStubForLogin();
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl(), "admin", "admin");
 
@@ -94,7 +93,7 @@ namespace MetscanClient
 
 			// the redirected resource
 			HttpServer.Stub(x => x.CustomVerb("/admin/licenseRedirected", "GET"))
-				.Return(GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_success.json"))
+				.Return(GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getCurrentLicenseInformation.getCurrentLicenseInformation_success.json"))
 				.AddHeader("Content-Type", "application/json; charset=utf-8")
 				.AddHeader("Location", "/admin/licenseRedirected")
 				.WithStatus((HttpStatusCode) 200);

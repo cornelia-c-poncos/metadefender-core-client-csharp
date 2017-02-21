@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C Sharp REST Sample", "C Sharp REST Sample\C Sharp REST Sample.csproj", "{7D742A6C-A410-4A43-803C-88F041DDEBDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadefenderCoreClient", "MetadefenderCoreClient\MetadefenderCoreClient.csproj", "{7D742A6C-A410-4A43-803C-88F041DDEBDE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{282AC4E4-E7D0-4559-A0D9-ACA144435927}"
 	ProjectSection(SolutionItems) = preProject

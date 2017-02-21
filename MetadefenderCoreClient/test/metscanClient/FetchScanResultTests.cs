@@ -16,7 +16,7 @@ namespace MetscanClient
 
 			string existingDataId = "59f92cb3e3194c6381d3f8819a0d47ed";
 
-			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResult.fetchScanResult_success.json"));
+			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResult.fetchScanResult_success.json"));
 
 			FileScanResult result = metadefenderCoreClient.FetchScanResult(existingDataId);
 			Assert.AreEqual(existingDataId, result.data_id);
@@ -38,7 +38,7 @@ namespace MetscanClient
 
 			string existingDataId = "fafb3a12b0d141909b3a3ba6b26e42c9";
 
-			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResult.fetchScanResult_success_withArchive.json"));
+			CreateStub("/file/" + existingDataId, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResult.fetchScanResult_success_withArchive.json"));
 
 
 			FileScanResult result = metadefenderCoreClient.FetchScanResult(existingDataId);
@@ -62,7 +62,7 @@ namespace MetscanClient
 
 			string nonExistingId = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/file/" + nonExistingId, "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.fetchScanResult.fetchScanResult_notFound.json"));
+			CreateStub("/file/" + nonExistingId, "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.fetchScanResult.fetchScanResult_notFound.json"));
 
 			bool isException = false;
 			try
@@ -89,7 +89,7 @@ namespace MetscanClient
 
 			string existingDataId = "61dffeaa728844adbf49eb090e4ece0e";
 
-			CreateStub("/file/" + existingDataId, "GET", 500, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/file/" + existingDataId, "GET", 500, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
 			try

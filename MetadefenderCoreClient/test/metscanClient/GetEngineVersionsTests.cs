@@ -15,7 +15,7 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/stat/engines", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.getEngineVersions.getEngineVersions_success.json"));
+			CreateStub("/stat/engines", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.getEngineVersions.getEngineVersions_success.json"));
 
 			List<EngineVersion> result = metadefenderCoreClient.GetEngineVersions();
 
@@ -33,7 +33,7 @@ namespace MetscanClient
 		{
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 
-			CreateStub("/stat/engines", "GET", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.errorJson.json"));
+			CreateStub("/stat/engines", "GET", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.errorJson.json"));
 
 			bool isException = false;
 			try

@@ -23,6 +23,6 @@ This library makes it easy to:
 ## Example usages
 
 Open the Command Prompt and change the directory where the binary is. After that the following commands should work:
-* "C Sharp REST Sample.exe" -h http://localhost:8008/ -u admin -p admin -a info
-* "C Sharp REST Sample.exe" -h http://localhost:8008/ -u admin -p admin -a scan -f fileToScan.ext
-* "C Sharp REST Sample.exe" -h http://localhost:8008/ -u admin -p admin -a scan_sync -f fileToScan.ext
+* "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a info
+* "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a scan -f fileToScan.ext
+* "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a scan_sync -f fileToScan.ext

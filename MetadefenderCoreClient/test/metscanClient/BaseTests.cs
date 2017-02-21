@@ -58,7 +58,7 @@ namespace MetscanClient
 			CreateStubForLogin();
 
 			CreateStub("/version", "GET", 403,
-				GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.version.getVersion_accessDenied.json"));
+				GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.version.getVersion_accessDenied.json"));
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl());
 			metadefenderCoreClient.Login("admin", "admin");
@@ -95,7 +95,7 @@ namespace MetscanClient
 		{
 			CreateStubForLogin();
 
-			CreateStub("/logout", "POST", 200, GetJsonFromFile("C_Sharp_REST_Sample.test.resources.apiResponses.logout.logout_success.json"));
+			CreateStub("/logout", "POST", 200, GetJsonFromFile("MetadefenderCoreClient.test.resources.apiResponses.logout.logout_success.json"));
 
 			MetadefenderCoreClient metadefenderCoreClient = new MetadefenderCoreClient(GetMockApiUrl(), "admin", "admin");
 
