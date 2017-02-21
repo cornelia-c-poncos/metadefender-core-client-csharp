@@ -22,7 +22,7 @@ This library makes it easy to:
 
 ## Example usages
 
-Open the Command Prompt and change the directory where the binary is. After that the following commands should work:
+Open the Command Prompt and change the directory where the binary is (there is a pre-built exe in the build directory). After that the following commands should work:
 * "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a info
 * "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a scan -f fileToScan.ext
 * "MetadefenderCoreClient.exe" -h http://localhost:8008/ -u admin -p admin -a scan_sync -f fileToScan.ext
