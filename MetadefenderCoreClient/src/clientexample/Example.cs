@@ -209,7 +209,7 @@ namespace Opswat.Metadefender.Core.ClientExample
 
 				if (index >= 0)
 				{
-					if (args.Length >= index + 1)
+					if (args.Length > index + 1)
 					{
 						parameters[switchStr] = args[index + 1];
 					}
