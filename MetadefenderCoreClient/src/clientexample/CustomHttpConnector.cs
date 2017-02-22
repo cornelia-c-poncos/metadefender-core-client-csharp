@@ -6,7 +6,7 @@ namespace Opswat.Metadefender.Core.ClientExample
 {
 	public class CustomHttpConnector : HttpConnector
 	{
-		public HttpResponse SendRequest(string url, string method, Stream inputStream, Dictionary<string, string> headers)
+		public new HttpResponse SendRequest(string url, string method, Stream inputStream, Dictionary<string, string> headers)
 		{
 			return base.SendRequest(url, method, inputStream, headers);
 		}
