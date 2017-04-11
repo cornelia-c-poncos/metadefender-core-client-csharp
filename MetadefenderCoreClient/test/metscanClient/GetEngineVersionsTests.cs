@@ -4,6 +4,8 @@ using Opswat.Metadefender.Core.Client;
 using Opswat.Metadefender.Core.Client.Exceptions;
 using Opswat.Metadefender.Core.Client.Responses;
 using System.Collections.Generic;
+using HttpMock;
+using HttpMock.Verify.NUnit;
 
 namespace MetscanClient
 {

@@ -1,5 +1,6 @@
 
 using HttpMock;
+using HttpMock.Verify.NUnit;
 using System;
 using NUnit.Framework;
 using Opswat.Metadefender.Core.Client;

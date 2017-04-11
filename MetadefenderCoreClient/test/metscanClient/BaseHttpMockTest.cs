@@ -4,7 +4,9 @@ using NUnit.Framework;
 using System.Reflection;
 using System.Text;
 using HttpMock;
+using HttpMock.Verify.NUnit;
 using System.Net;
+
 namespace MetscanClient
 {
 	[TestFixture]

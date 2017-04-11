@@ -1,4 +1,5 @@
 
+using HttpMock.Verify.NUnit;
 using HttpMock;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;

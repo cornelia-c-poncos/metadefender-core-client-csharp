@@ -3,12 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadefenderCoreClient", "MetadefenderCoreClient\MetadefenderCoreClient.csproj", "{7D742A6C-A410-4A43-803C-88F041DDEBDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{7D742A6C-A410-4A43-803C-88F041DDEBDE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF2D7C71-8199-4277-A6C7-F2AA5725D680} = {EF2D7C71-8199-4277-A6C7-F2AA5725D680}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{282AC4E4-E7D0-4559-A0D9-ACA144435927}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadefenderCoreClient", "MetadefenderCoreClient\MetadefenderCoreClient.csproj", "{EF2D7C71-8199-4277-A6C7-F2AA5725D680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +25,10 @@ Global
 		{7D742A6C-A410-4A43-803C-88F041DDEBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D742A6C-A410-4A43-803C-88F041DDEBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D742A6C-A410-4A43-803C-88F041DDEBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF2D7C71-8199-4277-A6C7-F2AA5725D680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2D7C71-8199-4277-A6C7-F2AA5725D680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2D7C71-8199-4277-A6C7-F2AA5725D680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2D7C71-8199-4277-A6C7-F2AA5725D680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

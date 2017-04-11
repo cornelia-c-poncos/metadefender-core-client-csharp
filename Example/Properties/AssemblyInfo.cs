@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MetadefenderCoreClient")]
+[assembly: AssemblyTitle("C Sharp REST Sample")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MetadefenderCoreClient")]
+[assembly: AssemblyProduct("C Sharp REST Sample")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ccb49a89-c6e1-4625-a1fc-a9e5aaadce94")]
+[assembly: Guid("553cb023-4347-4dfb-9086-86b36e0445dd")]
 
 // Version information for an assembly consists of the following four values:
 //
