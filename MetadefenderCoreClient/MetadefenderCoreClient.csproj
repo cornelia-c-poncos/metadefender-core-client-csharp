@@ -30,21 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HttpMock">
-      <HintPath>..\packages\HttpMock.2.0.0\lib\net45\HttpMock.dll</HintPath>
-    </Reference>
-    <Reference Include="HttpMock.Verify.NUnit">
-      <HintPath>..\packages\HttpMock.Verify.NUnit.1.0.0\lib\net45\HttpMock.Verify.NUnit.dll</HintPath>
-    </Reference>
-    <Reference Include="Kayak">
-      <HintPath>..\packages\Kayak.0.7.2\lib\Kayak.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,55 +65,12 @@
     <Compile Include="src\client\responses\ScanRequest.cs" />
     <Compile Include="src\client\responses\ScanResults.cs" />
     <Compile Include="src\client\responses\ScanRule.cs" />
-    <Compile Include="test\metscanClient\BaseHttpMockTest.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\BaseTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\FetchScanResultByHashTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\FetchScanResultTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\GetAvailableScanRulesTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\GetCurrentLicenseInformationTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\GetEngineVersionsTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="test\metscanClient\ScanFileTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="test\resources\apiResponses\errorJson.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResultByHash\fetchScanResultByHash_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResultByHash\fetchScanResult_notFound.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResult\fetchScanResult_inProgress.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResult\fetchScanResult_notFound.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResult\fetchScanResult_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\fetchScanResult\fetchScanResult_success_withArchive.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\getAvailableScanRules\getAvailableScanRules_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\getAvailableScanRules\getAvailableScanRules_withNewUnknownFieldsJson.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\getCurrentLicenseInformation\getCurrentLicenseInformation_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\getCurrentLicenseInformation\getCurrentLicenseInformation_withNewUnknownFields.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\getEngineVersions\getEngineVersions_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\logout\logout_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\scanFile\scanFile_success.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\version\getVersion_accessDenied.json" />
-    <EmbeddedResource Include="test\resources\apiResponses\version\getVersion_success.json" />
-    <EmbeddedResource Include="test\resources\testScanFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
