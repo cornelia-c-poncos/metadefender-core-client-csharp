@@ -235,8 +235,7 @@ namespace Opswat.Metadefender.Core.Client
 		 * @return FileScanResult
 		 * @throws MetadefenderClientException
 		 */
-		public Responses.FileScanResult ScanFileSync(Stream inputStream, FileScanOptions fileScanOptions, int pollingInterval,
-			int timeout)
+		public Responses.FileScanResult ScanFileSync(Stream inputStream, FileScanOptions fileScanOptions, int pollingInterval, int timeout)
 		{
 			string data_id = ScanFile(inputStream, fileScanOptions);
 			var t = Task<Responses.FileScanResult>.Run(() =>

@@ -54,6 +54,10 @@ namespace Opswat.Metadefender.Core.ClientExample
 				FileScanResult result = metadefenderCoreClient.ScanFileSync(inputStream,
 					new FileScanOptions().SetFileName(GetFileNameFromPath(file)), 200, 5000);
 				Console.WriteLine("File scan finished with result: " + result.process_info.result);
+				if (result.process_info.post_processing != null)
+				{
+					Console.WriteLine("post processing: " + result.process_info.post_processing);
+				}
 			}
 			catch (MetadefenderClientException e)
 			{
@@ -97,6 +101,10 @@ namespace Opswat.Metadefender.Core.ClientExample
 			{
 				FileScanResult result = metadefenderCoreClient.FetchScanResultByHash(hash);
 				Console.WriteLine("Fetch result by file hash: " + result.process_info.result);
+				if (result.process_info.post_processing != null)
+				{
+					Console.WriteLine("post processing: " + result.process_info.post_processing);
+				}
 			}
 			catch (MetadefenderClientException e)
 			{

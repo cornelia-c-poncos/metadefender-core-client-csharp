@@ -22,5 +22,8 @@ namespace Opswat.Metadefender.Core.Client.Responses
 
 		[JsonProperty(Required = Required.Always)]
 		public string user_agent;
+
+		[JsonProperty(Required = Required.Default)]
+		public PostProcessing post_processing;
 	}
 }
