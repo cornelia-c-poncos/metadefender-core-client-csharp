@@ -2,6 +2,9 @@
 # Metadefender Core Client (C#)
 > C# library for the Metadefender Core v4 REST API.
 
+<aside class="warning">
+The library's purpose is to demonstrate the basic usage of Metadefender Core v4 REST API. It is not complete and is not guaranteed to be maintained.
+</aside>
 
 ## Features
 
