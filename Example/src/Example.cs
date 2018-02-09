@@ -52,7 +52,7 @@ namespace Opswat.Metadefender.Core.ClientExample
 			{
 				Stream inputStream = File.Open(file, FileMode.Open);
 				FileScanResult result = metadefenderCoreClient.ScanFileSync(inputStream,
-					new FileScanOptions().SetFileName(GetFileNameFromPath(file)), 200, 5000);
+					new FileScanOptions().SetFileName(GetFileNameFromPath(file)), 200, 1000 * 30, 5000);
 				Console.WriteLine("File scan finished with result: " + result.process_info.result);
 				if (result.process_info.post_processing != null)
 				{

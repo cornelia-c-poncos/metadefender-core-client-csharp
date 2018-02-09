@@ -71,7 +71,7 @@ namespace MetscanClient
 			using (Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("MetadefenderCoreClient.test.resources.testScanFile.txt"))
 			{
 				FileScanResult result = metadefenderCoreClient.ScanFileSync(
-					stream, new FileScanOptions().SetFileName("fileName.txt"), 50, 4000);
+					stream, new FileScanOptions().SetFileName("fileName.txt"), 50, 1000 * 30, 4000);
 				Assert.AreEqual("Allowed", result.process_info.result);
 				Assert.AreEqual("Clean", result.scan_results.scan_all_result_a);
 				Assert.Null(result.extracted_files);
@@ -105,7 +105,7 @@ namespace MetscanClient
 				try
 				{
 					// it should be a timeout, because we return in progress response every time
-					FileScanResult result = metadefenderCoreClient.ScanFileSync(stream, new FileScanOptions().SetFileName("fileName.txt"), 50, 2000);
+					FileScanResult result = metadefenderCoreClient.ScanFileSync(stream, new FileScanOptions().SetFileName("fileName.txt"), 50, 1000 * 30, 2000);
 				}
 				catch (TimeoutException)
 				{
